@@ -60,7 +60,7 @@ func main() {
 			)
 		}))
 		router.Use(gin.Recovery())
-
+		cfg.Init()
 		dbCredential := model.Credential{
 			Host:         cfg.Config.DBHost,
 			Username:     cfg.Config.DBUsername,
