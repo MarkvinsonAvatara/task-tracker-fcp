@@ -80,8 +80,8 @@ func main() {
 		router = RunServer(conn, router)
 		router = RunClient(conn, router, Resources)
 
-		fmt.Println("Server is running on port 3000")
-		err = router.Run("localhost:3000")
+		fmt.Println("Server is running on port 8080")
+		err = router.Run("localhost:8080")
 		if err != nil {
 			panic(err)
 		}
