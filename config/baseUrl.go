@@ -9,7 +9,7 @@ var (
 
 func SetUrl(url string) string {
 	if BaseURL == "" {
-		BaseURL = "http://localhost:8080"
+		BaseURL = "http://localhost:3000"
 	}
 
 	return BaseURL + url
